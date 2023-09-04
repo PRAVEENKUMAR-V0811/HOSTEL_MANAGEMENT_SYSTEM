@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback_form|SKCT</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="shortcut icon" type="image" href="./images/skct logo.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/4c07e95c56.js" crossorigin="anonymous"></script>
+    <style>
+    .class1{
+  margin: 0;
+  background-color: #000000;
+  color:#fff
+      }
+  a{
+        text-decoration: none;
+        color: #ffffff;
+      }
+  a:hover {
+       
+        color: #ffffff;
+}
+      .column {
+  float: left;
+  width: 20.22%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+i{
+  color:#fff;
+}
+#fname{
+  width: 450px;
+}
+#lname
+{
+  width: 450px;
+}
+#country
+{
+  width:450px;
+}
+#subject
+{
+  width:450px;
+}
+    </style>
+</head>
+<body>
+  <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/jquery.min.js"></script>
+  <center>
+      <div class="container">
+        <div style="text-align:center">
+          <h2>GRIEVANCES</h2>
+          <p>fill the required details and tell your Grievances will try to solve as soon as possible</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./images/skct logo.png" style="width:100%; align-items: left;">
+          </div>
+          <div class="column">
+            <form name="form3">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your Name">
+              <label for="lname">Register number</label>
+              <input type="text" id="lname" name="lastname" placeholder="Register Number">
+              <label for="country">Department</label>
+              <select id="country" name="country">
+                <option value="cse a">CSE</option>
+                <option value="cse a">CSE AIML</option>
+                <option value="cse b">CSE AIDS</option>
+                <option value="cse c">CSE IOT</option>
+                <option value="cse a">CSE CS</option>
+                <option value="cse b">IT</option>               
+                <option value="cse b">EEE</option>               
+                <option value="cse b">ECE</option>
+                <option value="cse b">CIVIL</option>
+                <option value="cse c">MECH</option>
+                <option value="cse c">ICE</option>
+              </select>
+              <label for="subject">Grievances</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <a href="./home page.html"><button type="button" class="btn btn-dark" onclick=" return validate()">SUBMIT</button></a>
+            </form>
+          </div>
+        </div>
+      </div>  </center>
+
+      <script>
+        function validate()
+        {
+        var x = document.forms["form3"]["subject"].value;
+        if(x=="")
+        {
+          alert('Feedback can\'t be empty');
+          return false;
+        }
+        else
+        {
+        alert('Thank you for your feedback. your feedback has noted.');
+        return true;
+        }
+        }
+      </script>
+      
+      <!--the footer section for contact info-->
+    <footer class="footer2">
+      <div style=" bottom: 0; width:100%;" class="class1">
+        <h3 style="text-align: center; color:rgb(255, 255, 255);"><strong>Contact info</strong></h3>
+       <h3 style="text-align: left; color:hsl(0, 0%, 100%);padding-left: 20px;"> <img src="./images/skct logo.png"style="width: 30px;height: 30px;">&emsp;Sri Krishna College of Technology</h3>
+       <h5 style="text-align: left; color:rgb(255, 255, 255);padding-left: 70px;">Golf Rd, Arivoli Nagar, Vivekanandapuram, Kovaipudur, Tamil Nadu 641042</h5>
+       
+       <div class="row">
+        <div class="column">
+        <p><i class="fa-brands fa-google"></i>&emsp;<a href="www.skct.edu.in">www.skct.edu.in</a></p>
+        <p style="font-family: 'Times New Roman', Times, serif;"><i class="fa-sharp fa-solid fa-phone-volume">&emsp;</i>0422-2984567 | 0422-2984568</p>
+        <p><i class="fa-solid fa-envelope"></i>&emsp;info@skct.edu.in</p>
+        <p style="padding-left: 10px;"><i class="fa-solid fa-user fa-2x"></i>&emsp;<a href="./get started.html">LOG OUT</a></p>
+        </div>
+        <div class="column">
+          <h4><u>Social media</u></h4>
+          
+          <p><i class="fa-brands fa-youtube"></i>&emsp;<a href="https://www.youtube.com/@skct-official6423"target="_blank">youtube</a></p>
+          <p><i class="fa-brands fa-instagram"></i>&emsp;<a href="linktr.ee/skctofficial"target="_blank">instagram</a></p>
+          <p><i class="fa-brands fa-facebook"></i>&emsp;<a href="https://m.facebook.com/skctoffial" target="_blank">facebook</a></p>
+          <p><i class="fa-brands fa-linkedin"></i>&emsp;<a href="https://www.linkedin.com/in/skctofficial"target="_blank">linkedin</a></p>
+          <p><i class="fa-brands fa-twitter"></i>&emsp;<a href="https://twitter.com/skct__official"target="_blank">twitter</a></p>
+        </div>
+  
+        <div class="column">
+          <h4><u>short links</u></h4>
+          <p><a href="./home page.html">Home</a></p>
+          <p><a href="./hostel blocks.html">Hostel Blocks</a></p>
+          <p><a href="./forms.html" target="_blank">Application Form</a></p>
+          <h4><u>Feedback</u></h4>
+          <p><i class="fa-solid fa-comment"></i><a href="./Grievances.html">&emsp;Grievances</a></p>
+        </div>
+  
+        <div class="column">
+          <h4 style="text-align: center;"><u>Google Map</u></h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.472957510215!2d76.92357881744384!3d10.927601500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b823c4ca3d5%3A0x23416a992879b7c4!2sSri%20Krishna%20College%20Of%20Technology!5e0!3m2!1sen!2sin!4v1676698986580!5m2!1sen!2sin" width="550" height="300" style="border: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div></footer>
+</body>
+</html>

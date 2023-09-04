@@ -1,0 +1,20 @@
+
+label{
+    font-size:140%;
+    color:black;  
+}
+input{
+    font-size:140%;
+    color:black;
+}
+ div{
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 5px 8px grey; 
+    border-color: azure;
+ }
+ a{
+    color:black;
+    text-decoration: none;
+ }
+ 
